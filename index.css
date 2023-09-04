@@ -1,0 +1,239 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+:root{
+    --tomato:hsl(4, 100%, 67%);
+    --greycolor:hsl(234, 29%, 20%);
+    --charcoal: hsl(235, 18%, 26%);
+    --maingrey:hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.grid{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+.d-flex{
+    display: flex;
+}
+.d-flex *{
+    padding-left: .8rem;
+}
+.pt-1{
+   padding-top: 1rem!important; 
+}
+.pt-2{
+    padding-top: 2rem!important; 
+ }
+.px-1{
+    padding-left: 1rem!important;
+    padding-right: 1rem!important;
+}
+.px-2{
+    padding-left: 2rem!important;
+    padding-right: 2rem!important;
+}
+.px-3{  
+    padding-left: 2rem!important;
+    padding-right: 6rem!important;
+}
+.bg-primary{
+    background-color: rgb(48, 47, 47);
+}
+.inline-block{
+    display: inline-block;
+    background-color: aqua;
+}
+.bold{
+    font-weight: bold;
+}
+.border-none{
+    border: none!important;
+}
+.bg-pink{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg,  var(--tomato) 0%, rgba(228,95,18,1) 100%);
+}
+.bg-blue-core{
+    background-color: var(--greycolor);
+    color: white;
+    font-weight: bold;
+}
+.transitive{
+    transition: all 2s ease-in-out;
+}
+.pb-5{
+    padding-bottom: 5rem!important;
+}
+.shadow-pink_onover:hover{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg,  var(--tomato) 0%, rgba(228,95,18,1) 100%);
+    box-shadow: 5px 5px 23px  var(--tomato)!important;
+}
+button{
+    cursor: pointer;
+}
+.input-style{
+    padding: 1.2rem;
+    width: 100%;
+    border-radius: .5rem;
+    outline: none;
+    border: .02rem solid rgb(48, 47, 47);
+}
+.pt-2{
+    padding-top: 2rem;
+}
+.pb-1{
+    padding-bottom: 1rem;
+}
+.inline-block img{
+    display: inline-block;
+}
+.cover-page{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(39, 39, 39, 0.5);
+    position: absolute;
+    z-index: 300;
+    top: 0;
+    backdrop-filter: blur(5px);
+    transition: all 0.5s ease-in-out;
+}
+.hide-cover-page{
+ z-index: 0; 
+ opacity: 0;  
+}
+.grid div{
+    z-index: 1;
+    padding: .5rem;
+ 
+}
+.attribution{
+    padding-top: 2rem;
+}
+h1{
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: rgb(48, 47, 47);
+}
+.font-big{
+    font-size: 2.8rem;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.danger{
+    color: #f19a95;
+}
+.hide{
+    display: none;
+}
+.input-style:invalid{
+    border: .02rem solid #f19a95;
+    background-color: rgb(240, 207, 207);
+    color: #f19a95;
+}
+#validate-mail{
+    font-weight: bold;
+}
+.modal{
+    z-index: 350;
+    padding: .9rem;
+    padding-top: .9rem;
+    background-color: rgb(255,255,255);
+    box-shadow: 2px 2px 33px  rgb(109, 108, 108);
+    max-width: 90%;
+    left: 29%;
+    border-radius: 2rem;
+    width: 390px;
+    position: absolute;
+    top: 5rem;
+}
+.text-moyenne{
+    font-size: 1.5rem;
+}
+
+.text-center{
+    text-align: left;
+}
+.faceone{
+    
+    padding-top: 8%!important;
+    padding-left: 3.5rem!important;
+    padding-right: 3.5rem!important;
+}
+.facetwo{
+    background: url('assets/images/illustration-sign-up-desktop.svg') no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: auto; 
+}
+
+@media screen and (max-width: 1240px){
+ 
+    .grid{
+        padding-top: .02rem;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .facetwo{
+       
+        background-size: cover;
+        min-height: 25vh;
+        padding-top: 0px;
+    }
+    .faceone{
+        padding-left: .2rem!important;
+        padding-right: .2rem!important;
+    }
+    .faceone div{
+        width: 100%;
+        margin: .2rem;
+        padding: .02rem;
+    }
+    .smart-btn{
+        width:100% ;
+        margin: .2rem;
+    }
+    .input-style{
+        width: 100%;
+        
+    }
+    .px-1{
+        padding-left: .1rem;
+        padding-right: .1rem;
+    }
+    .px-2{
+        padding-left: .2rem!important;
+    }
+    .px-3{  
+        padding-left: .3rem!important;
+        padding-right: .6rem!important;
+    }
+    .d-flex *{
+        padding-left: .08rem;
+    }
+    .d-flex li{
+        padding-left: .8rem;
+    }
+    .modal{
+       
+        padding: .9rem;
+        padding-top: .9rem;
+        background-color: rgb(255,255,255);
+        box-shadow: 2px 2px 33px  rgb(109, 108, 108);
+        max-width: 90%;
+        left: 5%;
+        border-radius: 2rem;
+        width: 390px;
+        position: absolute;
+        top: 5rem;
+    }
+}
